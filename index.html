@@ -9,7 +9,23 @@
     <title>DGI BOT - test</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="text/javascript" src="/js/app.bundle.js"></script>
+    <script type="text/javascript">
+      window.addEventListener(
+        "load",
+        function (e) {
+          var t = document.createElement("div"),
+            d = document.createElement("script"),
+            n = document.body;
+          (t.id = "root"),
+            (d.type = "text/javascript"),
+            (d.async = !0),
+            (d.src =
+              "https://youthful-dubinsky-46fd58.netlify.app/js/app.bundle.js"),
+            n.appendChild(t),
+            n.appendChild(d);
+        },
+        !1
+      );
+    </script>
   </body>
 </html>
